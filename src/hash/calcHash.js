@@ -1,5 +1,21 @@
+import crypto from "crypto";
+import fs from "fs";
+
 const calculateHash = async () => {
-    // Write your code here 
+  const filePath =
+    "D:/Trash/MITSO/Course 3/Semester 2/RICE/mitso-nodejs-basic/src/hash/files/fileToCalculateHashFor.txt";
+
+  fs.readFile(filePath, (err, data) => {
+    if (err) {
+      console.error("Ошибка чтения файла:", err);
+      return;
+    }
+
+    const hash = crypto.createHash("sha256");
+    hash.update(data);
+    const hexHash = hash.digest("hex");
+    console.log("SHA256 хэш файла:", hexHash);
+  });
 };
 
-await calculateHash();
+calculateHash();
