@@ -1,7 +1,7 @@
 import fs from "fs";
 
 const filePath =
-  "D:/Trash/MITSO/Course 3/Semester 2/RICE/mitso-nodejs-basic/src/streams/files/fileToWrite.txt";
+  "D:/Trash/MITSO/Course3/Semester2/RICE/mitso-nodejs-basic/src/streams/files/fileToWrite.txt";
 
 const write = async () => {
   const writeStream = fs.createWriteStream(filePath);

@@ -2,7 +2,7 @@ import fs from "fs/promises";
 
 const list = async () => {
   const folderPath =
-    "D:/Trash/MITSO/Course 3/Semester 2/RICE/mitso-nodejs-basic/src/fs/files";
+    "D:/Trash/MITSO/Course3/Semester2/RICE/mitso-nodejs-basic/src/fs/files";
 
   try {
     const files = await fs.readdir(folderPath);

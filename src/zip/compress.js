@@ -3,7 +3,7 @@ import zlib from "zlib";
 
 const compress = async () => {
   const filePath =
-    "D:/Trash/MITSO/Course 3/Semester 2/RICE/mitso-nodejs-basic/src/zip/files/fileToCompress.txt";
+    "D:/Trash/MITSO/Course3/Semester2/RICE/mitso-nodejs-basic/src/zip/files/fileToCompress.txt";
   const readStream = fs.createReadStream(filePath);
   const writeStream = fs.createWriteStream("archive.gz");
   const gzip = zlib.createGzip();

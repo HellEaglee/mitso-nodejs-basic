@@ -3,9 +3,9 @@ import zlib from "zlib";
 
 const decompress = async () => {
   const inputPath =
-    "D:/Trash/MITSO/Course 3/Semester 2/RICE/mitso-nodejs-basic/archive.gz";
+    "D:/Trash/MITSO/Course3/Semester2/RICE/mitso-nodejs-basic/archive.gz";
   const outputPath =
-    "D:/Trash/MITSO/Course 3/Semester 2/RICE/mitso-nodejs-basic/src/zip/files/fileToCompress.txt";
+    "D:/Trash/MITSO/Course3/Semester2/RICE/mitso-nodejs-basic/src/zip/files/fileToCompress.txt";
 
   const readStream = fs.createReadStream(inputPath);
   const writeStream = fs.createWriteStream(outputPath);

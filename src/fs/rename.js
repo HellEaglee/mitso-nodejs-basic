@@ -1,9 +1,9 @@
 import { promises as fs } from "fs";
 const rename = async () => {
   const sourcePath =
-    "D:/Trash/MITSO/Course 3/Semester 2/RICE/mitso-nodejs-basic/src/fs/files/wrongFilename.txt";
+    "D:/Trash/MITSO/Course3/Semester2/RICE/mitso-nodejs-basic/src/fs/files/wrongFilename.txt";
   const destinationPath =
-    "D:/Trash/MITSO/Course 3/Semester 2/RICE/mitso-nodejs-basic/src/fs/files/properFilename.md";
+    "D:/Trash/MITSO/Course3/Semester2/RICE/mitso-nodejs-basic/src/fs/files/properFilename.md";
 
   try {
     await fs.access(sourcePath);

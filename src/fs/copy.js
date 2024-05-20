@@ -2,9 +2,9 @@ import fs from "fs";
 import path from "path";
 
 const sourceDir =
-  "D:/Trash/MITSO/Course 3/Semester 2/RICE/mitso-nodejs-basic/src/fs/files";
+  "D:/Trash/MITSO/Course3/Semester2/RICE/mitso-nodejs-basic/src/fs/files";
 const destinationDir =
-  "D:/Trash/MITSO/Course 3/Semester 2/RICE/mitso-nodejs-basic/src/fs/files_copy";
+  "D:/Trash/MITSO/Course3/Semester2/RICE/mitso-nodejs-basic/src/fs/files_copy";
 const copy = async () => {
   try {
     await fs.promises.access(sourceDir, fs.constants.F_OK);

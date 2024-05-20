@@ -3,7 +3,7 @@ import fs from "fs";
 
 const calculateHash = async () => {
   const filePath =
-    "D:/Trash/MITSO/Course 3/Semester 2/RICE/mitso-nodejs-basic/src/hash/files/fileToCalculateHashFor.txt";
+    "D:/Trash/MITSO/Course3/Semester2/RICE/mitso-nodejs-basic/src/hash/files/fileToCalculateHashFor.txt";
 
   fs.readFile(filePath, (err, data) => {
     if (err) {

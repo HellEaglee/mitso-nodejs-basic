@@ -2,7 +2,7 @@ import fs from "fs/promises";
 
 const remove = async () => {
   const filePath =
-    "D:/Trash/MITSO/Course 3/Semester 2/RICE/mitso-nodejs-basic/src/fs/files/fileToRemove.txt";
+    "D:/Trash/MITSO/Course3/Semester2/RICE/mitso-nodejs-basic/src/fs/files/fileToRemove.txt";
 
   try {
     await fs.unlink(filePath);

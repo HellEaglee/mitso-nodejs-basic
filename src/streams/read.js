@@ -2,7 +2,7 @@ import fs from "fs";
 
 const readAndPrintFile = async () => {
   const filePath =
-    "D:/Trash/MITSO/Course 3/Semester 2/RICE/mitso-nodejs-basic/src/streams/files/fileToRead.txt";
+    "D:/Trash/MITSO/Course3/Semester2/RICE/mitso-nodejs-basic/src/streams/files/fileToRead.txt";
   const fileStream = fs.createReadStream(filePath);
 
   return new Promise((resolve, reject) => {
